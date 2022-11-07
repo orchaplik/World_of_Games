@@ -13,9 +13,9 @@ def get_guess_from_user(diff):
 
 def compare_results(diff):
     if int(generate_number(diff)) == int(get_guess_from_user(diff)):
-        return True
+        return "You Won!!"
     else:
-        return False
+        return "You Lost!!"
 
 
 def play(diff):

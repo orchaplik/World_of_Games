@@ -27,11 +27,15 @@ def get_list_from_user(diff):
 
 
 def is_list_equal(diff):
-    return generate_sequence(diff) == get_list_from_user(diff)
+    is_equal = generate_sequence(diff) == get_list_from_user(diff)
+    return is_equal
 
 
 def play(diff):
-    print(is_list_equal(diff))
+    if is_list_equal(diff):
+        print("You Won")
+    else:
+        print("You Lost!!")
 
 
 
