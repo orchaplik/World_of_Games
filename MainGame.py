@@ -6,7 +6,7 @@ import CurrencyRouletteGame
 name = input('enter your first name: ')
 Live.welcome(name)
 game = Live.load_game()
-diff = Live.difficulty()
+diff = int(Live.difficulty())
 if int(game) == 1:
     MemoryGame.play(diff)
 elif int(game) == 2:

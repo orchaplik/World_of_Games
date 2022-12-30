@@ -1,4 +1,5 @@
 from random import randrange
+from Score import add_score
 
 
 def generate_number(diff):
@@ -20,7 +21,7 @@ def compare_results(diff):
 
 def play(diff):
     if compare_results(diff):
-        print("you won")
+        add_score(diff)
     else:
         print("you lost")
 

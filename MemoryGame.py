@@ -1,7 +1,8 @@
 from random import randrange
 import Live
 import time
-import os
+from Score import add_score
+from Utils import screen_cleaner
 
 
 def generate_sequence(diff):
@@ -12,7 +13,7 @@ def generate_sequence(diff):
         i = i + 1
     print(list_of_nums)
     time.sleep(0.7)
-    os.system('cls')
+    screen_cleaner()
     return list_of_nums
 
 
@@ -33,7 +34,8 @@ def is_list_equal(diff):
 
 def play(diff):
     if is_list_equal(diff):
-        print("You Won")
+        add_score(diff)
+        # return print("You Won")
     else:
         print("You Lost!!")
 
