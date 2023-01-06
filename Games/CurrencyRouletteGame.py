@@ -1,7 +1,7 @@
 import random
 import Live
 from currency_converter import CurrencyConverter
-from Score import add_score
+from Score.Score import add_score
 
 
 def get_money_interval(diff):

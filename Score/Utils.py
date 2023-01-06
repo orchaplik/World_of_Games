@@ -1,5 +1,4 @@
 import os
-scores_path = "scores.txt"
 bad_return_code = -1
 
 

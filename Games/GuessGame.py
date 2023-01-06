@@ -1,5 +1,5 @@
 from random import randrange
-from Score import add_score
+from Score.Score import add_score
 
 
 def generate_number(diff):

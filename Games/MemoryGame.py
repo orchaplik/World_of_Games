@@ -1,15 +1,15 @@
 from random import randrange
 import Live
 import time
-from Score import add_score
-from Utils import screen_cleaner
+from Score.Score import add_score
+from Score.Utils import screen_cleaner
 
 
 def generate_sequence(diff):
     list_of_nums = []
     i = 1
-    while i <=  int(diff):
-        list_of_nums.append(int(randrange(1,101)))
+    while i <= int(diff):
+        list_of_nums.append(int(randrange(1, 101)))
         i = i + 1
     print(list_of_nums)
     time.sleep(0.7)

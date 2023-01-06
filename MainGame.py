@@ -1,7 +1,5 @@
 import Live
-import GuessGame
-import MemoryGame
-import CurrencyRouletteGame
+from Games import CurrencyRouletteGame, GuessGame, MemoryGame
 
 name = input('enter your first name: ')
 Live.welcome(name)
